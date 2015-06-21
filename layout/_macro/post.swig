@@ -103,7 +103,7 @@
     <div class="post-footer">
     
     <! -- 添加捐赠图标 -->
-{% if config.donate.enable %}
+    {% if config.donate.enable %}
     {% if is_home() %}
     {% else %}
 

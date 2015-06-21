@@ -48,7 +48,6 @@
               <span class="site-state-item-name">{{ __('state.tags') }}</span>
               {% if theme.menu.tags %}</a>{% endif %}
           </div>
-
         </div>
 
         {% if theme.rss %}
@@ -60,15 +59,15 @@
           </div>
         {% endif %}
 
-        <div class="links-of-author motion-element">
-          {% if theme.social %}
+        {% if theme.social %}
+          <div class="links-of-author motion-element">
             {% for name, link in theme.social %}
               <span class="links-of-author-item">
               <a href="{{ link }}" target="_blank">{{ name }}</a>
             </span>
-            {% endfor %}
-          {% endif %}
-        </div>
+            {% endfor %}          
+           </div>
+        {% endif %}
 
         {% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
         {% if theme.creative_commons in cc %}
@@ -79,6 +78,18 @@
           </div>
         {% endif %}
 
+     
+        {% if theme.links %}
+          <div class="links-of-author motion-element">        
+          <p class="site-author-name">{{ theme.links_title }}</p>
+            {% for name, link in theme.links %}
+              <span class="links-of-author-item">
+              <a href="{{ link }}" target="_blank">{{ name }}</a>
+              </span>
+            {% endfor %}
+          </div>
+        {% endif %}
+        
       </div>
 
       {% if is_post %}
@@ -95,7 +106,7 @@
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
         </div>
       {% endif %}
-
     </div>
+
   </div>
 {% endmacro %}

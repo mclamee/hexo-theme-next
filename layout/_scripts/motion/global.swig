@@ -1,6 +1,7 @@
 <script type="text/javascript" id="motion.global">
   $(document).ready(function () {
     var body = $('body');
+
     var isSidebarVisible = false;
     var sidebarToggle = $('.sidebar-toggle');
     var sidebarToggleLine1st = $('.sidebar-toggle-line-first')
@@ -28,8 +29,7 @@
     LogoAndMenuMotion();
     sidebatToggleMotion();
     postsListMotion();
-    backToTopMotion();
-
+    backToTopMotion();    
 
     $(document)
       .on('sidebar.isShowing', function () {

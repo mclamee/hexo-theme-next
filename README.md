@@ -62,13 +62,22 @@ git pull
 2015-04 新增特性
 - [新增多说热评文章](https://github.com/xirong/hexo-theme-next/wiki/%E6%96%B0%E5%A2%9E%E5%A4%9A%E8%AF%B4%E7%83%AD%E8%AF%84%E6%96%87%E7%AB%A0)
 - [增加 IE8 下提示升级到新浏览器 banner](https://github.com/xirong/hexo-theme-next/wiki/ie-8%E4%BB%A5%E4%B8%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%90%E7%A4%BA%E4%BD%BF%E7%94%A8%E6%96%B0%E7%89%88%E6%9C%AC%E8%AE%BF%E9%97%AE%E7%AB%99%E7%82%B9)
-- 增加360 站点认证 360-site-verification
 - [增加百度站内分享，适配主题样式](https://github.com/xirong/hexo-theme-next/wiki/%E6%96%B0%E5%A2%9E%E7%99%BE%E5%BA%A6%E7%AB%99%E5%86%85%E5%88%86%E4%BA%AB)
 - [简体中文版增加腾讯公益404页面](https://github.com/xirong/hexo-theme-next/wiki/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E5%A2%9E%E5%8A%A0%E8%85%BE%E8%AE%AF%E5%85%AC%E7%9B%8A404%E9%A1%B5%E9%9D%A2) 
 - [增加百度联盟认证ID]()
 
 2015-05 新增特性 
 - [增加博客打赏功能](https://github.com/xirong/hexo-theme-next/wiki/%E5%A2%9E%E5%8A%A0%E5%8D%9A%E5%AE%A2%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD)
+
+2015-06 新增特性 及bug修复
+- [支持友链功能](https://github.com/xirong/hexo-theme-next/wiki/sidebar-%E4%B8%8B%E6%96%B9%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE%E5%8A%9F%E8%83%BD) 
+- 添加多说分享功能，并调整排版适合NeXT主题，效果如：http://localhost:4000/2015/05/17/how-to-build-ixirong-blog/#comments
+- [文章末尾增加版权声明](https://github.com/xirong/hexo-theme-next/wiki/%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%E5%A2%9E%E5%8A%A0%E7%89%88%E6%9D%83%E8%AF%B4%E6%98%8E)
+- 适配手机、pad端展示 由于hexo renderplation的bug，暂时在手机端去掉搜索框、以及公益404标签的展示
+- 修复tiny_sou搜索插件注释后整个表头不展示的bug
+- 只在文章页面显示”热评文章“，其它关于、tag、分类页面不展示
+- 调整code代码块里面行号的颜色，更改成浅灰色。
+
 
 
 ## 配置

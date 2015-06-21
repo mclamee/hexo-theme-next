@@ -11,6 +11,10 @@
     <div class="headband"></div>
 
     <div id="header" class="header">
+
+    <script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery/index.js?v=2.1.3"></script>
+    {% include '_scripts/helpers.swig' %}
+
       <div class="header-inner">
         {% include '_partials/header.swig' %}
       </div>
@@ -23,7 +27,7 @@
          
         </div>
 
-        {% if (theme.duoshuo_hotartical and page.title)  %}
+        {% if is_post() and theme.duoshuo_hotartical and page.title  %}
         <!-- 多说热评文章-->
         <p>热评文章</p>
         <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
@@ -43,13 +47,13 @@
     <div class="back-to-top"></div>
   </div>
 
-  <script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery/index.js?v=2.1.3"></script>
+  <!-- <script type="text/javascript" src="{{ url_for(theme.vendors) }}/jquery/index.js?v=2.1.3"></script> -->
 
   {# This block is used to set options before any other scripts run #}
   {% block script_extra_before %}{% endblock %}
 
   {% include '_scripts/fancy-box.swig' %}
-  {% include '_scripts/helpers.swig' %}
+  <!-- {% include '_scripts/helpers.swig' %} -->
   {% include '_scripts/motion.swig' %}
 
   {% block script_extra %}{% endblock %}

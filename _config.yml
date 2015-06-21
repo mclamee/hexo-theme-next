@@ -9,8 +9,9 @@ menu:
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
 
+
 # Set default keywords (Use a comma to separate)
-keywords: "xirong,个人博客,xirong 一家之言,技术分享,读书分享,资料整理回顾"
+keywords: "shadowsocks,git,github,git工作流,大数据,jstorm,fastdfs"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -28,7 +29,7 @@ icon_font: default
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night eighties  
+highlight_theme: normal  
 
 
 # MathJax Support
@@ -65,7 +66,12 @@ images: images
 version: 0.4.2
 
 # xirong custom 
+avatar: /xirong.jpg
 
-
-# Google analysis 
-
+# Sidebar 侧栏行为，可选值有
+#  - post   默认值，在文章页面自动展开侧栏
+#  - always 在所有页面自动展开侧栏
+#  - hide   在手动点击侧栏的开关按钮时展开
+#sidebar: post
+#sidebar: always
+#sidebar: hide
