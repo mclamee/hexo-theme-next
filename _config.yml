@@ -75,4 +75,4 @@ avatar: /xirong.jpg
 #  - hide   在手动点击侧栏的开关按钮时展开
 #sidebar: post
 #sidebar: always
-#sidebar: hide
+sidebar: hide
