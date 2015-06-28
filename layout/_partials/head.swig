@@ -6,6 +6,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
+{% if config.description %}
+    <meta name="description" content="{{page.title}},{{page.description}} {{ config.description }}" />
+{% endif %}
+
+{% if page.tags and page.tags.length %}
+  <meta name="keywords" content="{% for tag in page.tags %}{{ tag.name }},{% endfor %} {{page.keywords}}" />
+{% elif theme.keywords %}
+  <meta name="keywords" content="{{ theme.keywords }} {{page.keywords}}" />
+{% endif %}
+
 {% if theme.google_site_verification %}
   <meta name="google-site-verification" content="{{ theme.google_site_verification }}" />
 {% endif %}
@@ -33,15 +43,6 @@
 
 <link rel="stylesheet" type="text/css" href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}"/>
 
-{% if config.description %}
-    <meta name="description" content="{{ config.description }}" />
-{% endif %}
-
-{% if page.tags and page.tags.length %}
-  <meta name="keywords" content="{% for tag in page.tags %}{{ tag.name }},{% endfor %}" />
-{% elif theme.keywords %}
-  <meta name="keywords" content="{{ theme.keywords }}" />
-{% endif %}
 
 {% if theme.rss %}
   <link rel="alternate" href="{{ url_for(theme.rss) }}" title="{{ config.title }}" type="application/atom+xml" />

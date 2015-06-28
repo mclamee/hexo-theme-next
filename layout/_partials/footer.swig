@@ -13,12 +13,12 @@
    鲁ICP备15013969号
 </div>
 <div class="powered-by">
-  {{ __('footer.powered', '<a class="theme-link" href="http://hexo.io">Hexo</a>' ) }}
+  {{ __('footer.powered', '<a class="theme-link" href="http://hexo.io" rel="external nofollow">Hexo</a>' ) }}
 </div>
 
 <div class="theme-info">
   {{ __('footer.theme') }} 
-  <a class="theme-link" href="https://github.com/xirong/hexo-theme-next">
+  <a class="theme-link" href="https://github.com/xirong/hexo-theme-next" rel="external nofollow">
     NexT
   </a>
 </div>
