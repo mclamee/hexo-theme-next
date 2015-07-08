@@ -11,10 +11,8 @@
 - [增加百度联盟认证ID]()
 
 
-2015-05 新增特性 
+2015 新增特性 
 - [增加博客打赏功能](https://github.com/xirong/hexo-theme-next/wiki/%E5%A2%9E%E5%8A%A0%E5%8D%9A%E5%AE%A2%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD)
-
-2015-06 新增特性 及bug修复
 - [支持友链功能](https://github.com/xirong/hexo-theme-next/wiki/sidebar-%E4%B8%8B%E6%96%B9%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE%E5%8A%9F%E8%83%BD) 
 - **添加多说分享功能，并调整排版适合NeXT主题**，效果如：http://www.ixirong.com/2015/05/17/how-to-build-ixirong-blog/#comments
 - 适配手机、pad端展示 由于hexo renderplation的bug，暂时在手机端去掉搜索框、以及公益404标签的展示
@@ -22,6 +20,7 @@
 - 只在文章页面显示”热评文章“，其它关于、tag、分类页面不展示
 - 调整code代码块里面行号的颜色，更改成浅灰色。
 - 调整“热评文章”模块在手机上的显示样式，符合NeXT主题，perfect！！
+- 防止百度转码代码 ，详情查看 [issue258](https://github.com/iissnan/hexo-theme-next/issues/258)
 
 feature，正在考虑的功能：
 - [文章末尾增加版权声明](https://github.com/xirong/hexo-theme-next/wiki/%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%E5%A2%9E%E5%8A%A0%E7%89%88%E6%9D%83%E8%AF%B4%E6%98%8E)
