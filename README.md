@@ -17,7 +17,7 @@
 - **添加多说分享功能，并调整排版适合NeXT主题**，效果如：http://www.ixirong.com/2015/05/17/how-to-build-ixirong-blog/#comments
 - 适配手机、pad端展示 由于hexo renderplation的bug，暂时在手机端去掉搜索框、以及公益404标签的展示
 - 修复tiny_sou搜索插件注释后整个表头不展示的bug
-- 只在文章页面显示”热评文章“，其它关于、tag、分类页面不展示
+- 只在文章页面显示“热评文章”，其它关于、tag、分类页面不展示
 - 调整code代码块里面行号的颜色，更改成浅灰色。
 - 调整“热评文章”模块在手机上的显示样式，符合NeXT主题，perfect！！
 - 防止百度转码代码 ，详情查看 [issue258](https://github.com/iissnan/hexo-theme-next/issues/258)
