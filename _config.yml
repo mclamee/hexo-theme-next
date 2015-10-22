@@ -1,3 +1,4 @@
+# 菜单配置
 menu:
   #home: /
   about: /about
@@ -6,48 +7,42 @@ menu:
   tags: /tags
   commonweal: /404.html
 
-# Place your favicon.ico to /source directory.
+# Favicon
+# 从`Next 0.2`起，favicon将不再放置于主题之内。
+# 请将你的favicon放置在`hexo-site/source/`目录下。
 favicon: /favicon.ico
 
-
 # Set default keywords (Use a comma to separate)
-keywords: "shadowsocks,git,github,git工作流,大数据,jstorm,fastdfs,xirong,ixirong,分布式"
+keywords: "人生,抉择,Mclamee,William Zhang,quietdog,JAVA,git,github,git工作流,大数据分布式"
 
-# Set rss to false to disable feed link.
-# Leave rss as empty to use site's feed link.
-# Set rss to specific value if you have burned your feed already.
-rss:
+# 设置为`false`不显示`rss`链接
+# 留空，并且通过`hexo-site-feed`插件配置使用默认的feed
+# 设置成特定的`url`，适用于通过第三方服务定制feed的情况。
+rss: false
 
-# Icon fonts
-# Place your font into next/source/fonts, specify directory-name and font-name here
-# Avialable: default | linecons | fifty-shades | feather
-# linecons:https://github.com/fontello/linecons.font
-icon_font: linecons
+# 图标字体
+# NexT内建四种图标: default | linecons | fifty-shades | feather
+icon_font: default
 #icon_font: fifty-shades
 #icon_font: feather
-#icon_font: default
+#icon_font: linecons
 
-# Code Highlight theme
-# Available value: normal | night | night eighties | night blue | night bright
-# https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal  
+# 代码高亮主题
+# available: normal | night | night eighties | night blue | night bright
+highlight_theme: normal
 
-
-# MathJax Support
+# MathJax support
+# 开启数学公式渲染支持，默认关闭。设置为 `true` 开启。
 mathjax:
 
-
-# Schemes
+# Mist
 scheme: Mist
 
-
-# Automatically scroll page to section which is under <!-- more --> mark.
+# `阅读全文` 按钮跳转之后是否自动滚动页面到设置 `<!-- more -->` 的地方。
 scroll_to_more: true
 
-
-# Automatically add list number to toc.
-toc_list_number: false
-
+# 是否为侧边栏文章的目录自动添加索引，默认开启。设置为 `false` 关闭。
+toc_list_number: true
 
 ## DO NOT EDIT THE FOLLOWING SETTINGS
 ## UNLESS YOU KNOW WHAT YOU ARE DOING
@@ -67,7 +62,7 @@ images: images
 version: 0.4.2
 
 # xirong custom 
-avatar: /xirong.jpg
+avatar: /mc.jpg
 
 # Sidebar 侧栏行为，可选值有
 #  - post   默认值，在文章页面自动展开侧栏

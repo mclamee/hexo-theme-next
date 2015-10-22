@@ -102,51 +102,6 @@
 
     <div class="post-footer">
     
-    <! -- 添加捐赠图标 -->
-    {% if config.donate.enable %}
-    {% if is_home() %}
-    {% else %}
-
-    <div class ="post-donate">
-      <div id="donate_board" class="donate_bar center">
-        <a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
-        <span class="donate_txt">
-           &uarr;<br>
-           {% if config.donate.text %}
-            {{ config.donate.text }}
-           {% endif %}          
-        </span>
-        <br>
-      </div>  
-  
-      <div id="donate_guide" class="donate_bar center hidden">
-        {% if config.donate.alipay %}
-          <a href="{{ config.donate.alipay }}" title="支付宝打赏" class="fancybox" rel="article0"       style="float:left;margin-left:25%;margin-right:2px;">
-          <img src="{{ config.donate.alipay }}" title="支付宝打赏" height="164px" width="164px">
-          </a> 
-        {% endif %}  
-
-      {% if config.donate.wechat %}
-       <a href="{{ config.donate.wechat }}" title="微信打赏" class="fancybox" rel="article0">
-         <img src="{{ config.donate.wechat }}" title="微信打赏" height="164px" width="164px">
-       </a>
-      {% endif %}
-    
-      </div>
-  
-      <script type="text/javascript">
-        document.getElementById('btn_donate').onclick = function(){
-          $('#donate_board').addClass('hidden');
-          $('#donate_guide').removeClass('hidden');
-        }
-      </script>
-    </div>
-
-    {% endif%}
-{% endif %}
-<! -- 添加捐赠图标 -->
-
-
       {% if post.tags and post.tags.length %}
         <div class="post-tags">
           {% for tag in post.tags %}
@@ -154,6 +109,48 @@
           {% endfor %}
         </div>
       {% endif %}
+
+    <! -- 添加捐赠图标 -->
+    {% if config.donate.enable %}
+	    {% if is_home() %}
+	    {% else %}
+			<div class="support-author">
+				<p>{% if config.donate.text %}{{ config.donate.text }}{% endif %}</p>
+				<a class="btn btn-pay" id="btn_donate" href="javascript:void 0">¥ 打赏支持</a>
+				<div id="donate_guide" class="hidden">
+					{% if config.donate.alipay %}
+						<a href="{{ config.donate.alipay }}" title="支付宝打赏" class="fancybox" rel="article0">
+							<img src="{{ config.donate.alipay }}" title="支付宝打赏" height="200px" width="200px">
+							<span>支付宝打赏</span>
+						</a> 
+					{% endif %}
+
+					{% if config.donate.wechat %}
+						<a href="{{ config.donate.wechat }}" title="微信打赏" class="fancybox" rel="article0">
+							<img src="{{ config.donate.wechat }}" title="微信打赏" height="200px" width="200px">
+							<span>微信打赏</span>
+						</a>
+					{% endif %}
+					
+					<div id="btn_collapse" class="collapse">收起↑</div>
+				</div>
+			  
+			  <script type="text/javascript">
+			    document.getElementById('btn_donate').onclick = function(){
+					$('#btn_donate').addClass('hidden');
+					$('#donate_guide').removeClass('hidden');
+			    }
+			    document.getElementById('btn_collapse').onclick = function(){
+					if($('#btn_donate').hasClass('hidden')){
+						$('#donate_guide').addClass('hidden');
+						$('#btn_donate').removeClass('hidden');
+					}
+			    }
+			  </script>
+			</div>
+	    {% endif%}
+	{% endif %}
+	<! -- 添加捐赠图标 -->
 
       {% if not is_index and (post.prev or post.next) %}
         <div class="post-nav">
