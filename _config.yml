@@ -13,7 +13,7 @@ menu:
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "人生,抉择,Mclamee,William Zhang,quietdog,JAVA,git,github,git工作流,大数据分布式"
+keywords: "人生,抉择,Mclamee,William Zhang,quietdog,Java,技术分享,资料整理"
 
 # 设置为`false`不显示`rss`链接
 # 留空，并且通过`hexo-site-feed`插件配置使用默认的feed
